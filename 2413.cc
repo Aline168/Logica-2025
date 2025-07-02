@@ -1,13 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main(){
- int t=0;
+int main()
+{
+    int t=0;
 
 
- cin >> t;
+    cin >> t;
 
- cout<< t*4<< endl;
+    cout<< t*4<< endl;
 
-return 0;
+    return 0;
 }
