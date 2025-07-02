@@ -1,32 +1,37 @@
+
 #include <stdio.h>
 
-int main() {
-int N;
+int main()
+{
+    int N;
 
-scanf("%d", &N);
+    scanf("%d", &N);
 
-int X[N]; 
-int i;
-
-
-for(i = 0; i < N; i++) {
-    scanf("%d", &X[i]);
-}
+    int X[N];
+    int i;
 
 
-int menor = X[0];
-int posicao = 0;
-
-
-for(i = 1; i < N; i++) {
-    if(X[i] < menor) {
-        menor = X[i];
-        posicao = i;
+    for(i = 0; i < N; i++)
+    {
+        scanf("%d", &X[i]);
     }
-}
 
-printf("Menor valor: %d\n", menor);
-printf("Posicao: %d\n", posicao);
 
-return 0;
+    int menor = X[0];
+    int posicao = 0;
+
+
+    for(i = 1; i < N; i++)
+    {
+        if(X[i] < menor)
+        {
+            menor = X[i];
+            posicao = i;
+        }
+    }
+
+    printf("Menor valor: %d\n", menor);
+    printf("Posicao: %d\n", posicao);
+
+    return 0;
 }
